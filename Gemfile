@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 gem 'haml'
+gem 'simple_form'
 gem 'jquery-rails'
 
 gem 'sqlite3', :groups => [:development, :test, :cucumber]
