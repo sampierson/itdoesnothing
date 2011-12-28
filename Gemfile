@@ -26,3 +26,11 @@ group :test do
   gem 'factory_girl_rails'
   gem 'simplecov', :require => false
 end
+
+# Gems to exclude when using Linux
+# Use: bundle install --without osxtest
+group :osxtest do
+  gem 'autotest'
+  gem 'autotest-rails-pure'
+  gem "autotest-fsevent"
+end
