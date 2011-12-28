@@ -30,6 +30,7 @@ end
 
 group :test do
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
   gem 'simplecov', :require => false
   gem 'spork', '~> 0.9.0.rc'
   gem 'database_cleaner'
