@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.15em;
+  color: $color-outer-space;
+}
+
+a, a:visited {
+  color: $color-cutty-sark;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}

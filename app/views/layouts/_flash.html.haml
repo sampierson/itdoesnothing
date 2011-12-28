@@ -1,0 +1,6 @@
+- unless flash.empty?
+  #flash
+    - [:notice, :alert].each do |flash_key|
+      - if flash[flash_key]
+        %div{ :title => flash_key.to_s.humanize, :class => "flash #{flash_key}" }
+          = flash[flash_key].gsub("\n", "<br>").html_safe

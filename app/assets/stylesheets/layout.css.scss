@@ -1,0 +1,40 @@
+body {
+  background-color: $color-frost;
+}
+
+header {
+  padding: 10px;
+  background-color: $color-downy;
+  height: 40px;
+
+  #logo {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    a {
+      color: $color-outer-space;
+    }
+  }
+  #authentication_pane {
+    float: right;
+  }
+}
+
+#content {
+  padding: 10px;
+}
+
+$footer-height: 34px;
+$footer-padding: 8px;
+
+#footer-content {
+  height: $footer-height - $footer-padding;
+  padding-top: $footer-padding;
+  background-color: $color-cutty-sark;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+@include sticky-footer($footer-height, "#wrapper", "#push-footer-down", "footer")
