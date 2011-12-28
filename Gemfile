@@ -27,6 +27,10 @@ group :test do
   gem 'factory_girl_rails'
   gem 'simplecov', :require => false
   gem 'spork', '~> 0.9.0.rc'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+  gem 'capybara'
 end
 
 # Gems to exclude when using Linux
