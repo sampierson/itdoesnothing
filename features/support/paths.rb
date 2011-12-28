@@ -16,6 +16,14 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
 
+    when /^the confirmation link for user "([^"]*)"$/
+      user = User.find_by_email!($1)
+      user_confirmation_path :confirmation_token => user.confirmation_token
+
+    when /^the unlock link for user "([^"]*)"$/
+      user = User.find_by_email!($1)
+      user_unlock_path :unlock_token => user.unlock_token
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
