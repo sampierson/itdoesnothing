@@ -1,2 +1,12 @@
+#authentication_pane
+  - if user_signed_in?
+    Signed in as
+    = current_user.email
+    %br
+    = link_to "Sign out", destroy_user_session_path, :method => :delete
+  - else
+    = link_to "Sign in", new_session_path(:user)
+    or
+    = link_to "Sign up", new_registration_path(:user)
 #logo
-  =link_to "It Does Nothing", root_path
+  It Does Nothing
