@@ -20,3 +20,5 @@
 /.idea
 # Mac OS X files
 .DS_Store
+# SimpleCov artifacts
+/coverage
