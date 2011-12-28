@@ -22,3 +22,5 @@
 .DS_Store
 # SimpleCov artifacts
 /coverage
+# Javascript fixtures
+/spec/javascripts/fixtures
