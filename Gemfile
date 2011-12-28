@@ -20,11 +20,13 @@ end
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rspec-rails'
+
 end
 
 group :test do
   gem 'factory_girl_rails'
   gem 'simplecov', :require => false
+  gem 'spork', '~> 0.9.0.rc'
 end
 
 # Gems to exclude when using Linux
