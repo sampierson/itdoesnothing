@@ -20,7 +20,7 @@ end
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rspec-rails'
-
+  gem 'jasmine'
 end
 
 group :test do
