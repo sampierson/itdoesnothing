@@ -13,3 +13,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Don't check in database credentials
+/config/database.yml
+# Ignore RubyMine metadata
+/.idea
+# Mac OS X files
+.DS_Store
