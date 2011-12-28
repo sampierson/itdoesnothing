@@ -76,6 +76,8 @@ Pages = {
 
   // Override this function with something that runs the JS you want to run on every page.
   allPages: function() {
+    // TODO replace with YourJSRootClass.Pages.All.init()
+    // Then reorganize controller/action JS to be hierarchical
   },
 
   camelize: function(str) {
