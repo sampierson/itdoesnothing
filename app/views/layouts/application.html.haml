@@ -6,7 +6,7 @@
       = site_title_helper
     = stylesheet_link_tag    "application"
     = csrf_meta_tags
-  %body{ :class => body_css_classes }
+  %body{ :class => body_css_classes, :'data-controller_name' => underscored_controller_name, :'data-action_name' => action_name }
     #wrapper
       %header
         = render :partial => 'layouts/header'
