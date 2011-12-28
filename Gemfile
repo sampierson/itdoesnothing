@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 gem 'haml'
+gem 'compass', '~> 0.12.alpha.3'
 gem 'simple_form'
 gem 'jquery-rails'
 
