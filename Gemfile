@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
+gem 'haml'
 gem 'jquery-rails'
 
 gem 'sqlite3', :groups => [:development, :test, :cucumber]
@@ -15,6 +16,7 @@ group :assets do
 end
 
 group :development do
+  gem 'haml-rails'
 end
 
 group :development, :test do
