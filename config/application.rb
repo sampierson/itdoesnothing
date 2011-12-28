@@ -57,5 +57,11 @@ module Itdoesnothing
       g.form_builder :simple_form
       g.template_engine :haml
     end
+
+    # Per Devise install instructions:
+    # If you are deploying Rails 3.1 on Heroku, you may want to set this
+    # on config/application.rb forcing your application to not access the DB
+    # or load models when precompiling your assets.
+    config.assets.initialize_on_precompile = false
   end
 end
