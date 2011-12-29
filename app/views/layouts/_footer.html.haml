@@ -1,2 +1,9 @@
 #footer-content
-  &copy; ItDoesNothing.com
+  #copyright
+    &copy; ItDoesNothing.com
+  #links
+    = link_to "About Us", root_path
+    = link_to "Privacy Policy", root_path
+    = link_to "Blog", root_path
+    - if user_signed_in? && current_user.admin?
+      = link_to 'Admin', admin_dashboard_path

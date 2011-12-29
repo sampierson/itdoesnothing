@@ -27,14 +27,26 @@ header {
 $footer-height: 34px;
 $footer-padding: 8px;
 
-#footer-content {
-  height: $footer-height - $footer-padding;
-  padding-top: $footer-padding;
-  background-color: $color-cutty-sark;
+footer {
   color: white;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 13px;
+  #links {
+    text-align: center;
+    a, a:visited {
+    padding: 0 5px;
+    color: $color-downy;
+    }
+  }
+  #footer-content {
+    height: $footer-height - $footer-padding;
+    padding-top: $footer-padding;
+    background-color: $color-cutty-sark;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+  #copyright {
+    position: absolute;
+    right: 10px;
+  }
 }
 
 @include sticky-footer($footer-height, "#wrapper", "#push-footer-down", "footer")

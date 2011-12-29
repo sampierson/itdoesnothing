@@ -4,6 +4,10 @@ Itdoesnothing::Application.routes.draw do
 
   root :to => 'home#index'
 
+  namespace :admin do
+    root :to => 'dashboard#index', :as => 'dashboard'
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
