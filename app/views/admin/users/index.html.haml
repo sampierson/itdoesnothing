@@ -1,0 +1,22 @@
+= debug @users
+
+%table#users_table
+  %thead
+    %tr
+      %th Email
+      %th Roles
+      %th Sign Ins
+      %th Confirmed At
+      %th Locked At
+      %th Actions
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.email
+        %td= user.roles.join(" ")
+        %td= user.sign_in_count
+        %td= user.confirmed_at
+        %td= user.locked_at
+        %td
+          =link_to "edit", edit_admin_user_path(user)
+          =link_to "delete", admin_user_path(user), :method => :delete

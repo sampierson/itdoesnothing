@@ -6,6 +6,7 @@ Itdoesnothing::Application.routes.draw do
 
   namespace :admin do
     root :to => 'dashboard#index', :as => 'dashboard'
+    resources :users
   end
 
   # The priority is based upon order of creation:
