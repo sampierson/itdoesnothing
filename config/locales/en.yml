@@ -2,4 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  site_availability:
+    maintenance: "Sorry, the site is currently undergoing maintenance. %{detail}"
+    sorry_no_signups: "Sorry, new users may not sign-up at this time. %{detail}"
+    please_try_later: "Please try again later."

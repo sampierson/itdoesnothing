@@ -6,6 +6,7 @@ gem 'compass', '~> 0.12.alpha.3'
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'devise'
+gem 'enumerate_it'
 
 gem 'sqlite3', :groups => [:development, :test, :cucumber]
 gem 'pg', :group => :production # For Heroku
